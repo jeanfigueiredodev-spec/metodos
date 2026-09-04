@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --color-dark: #00000F;
+    --color-navy: #002A54;
+    --color-mid-blue: #8AA8FF;
+    --color-light-blue: #DAEAFF;
+    --color-white: #FBFFFF;
+    --color-orange: #FF9800;
+    
+    --font-heading: 'Libre Bodoni', serif;
+    --font-body: 'Helvetica', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 { font-family: var(--font-heading); }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+header {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header .logo { font-family: var(--font-heading); font-size: 1.5rem; font-weight: bold; }
+nav { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+nav a { color: var(--color-white); text-decoration: none; font-weight: bold; transition: color 0.3s ease; }
+nav a:hover { color: var(--color-mid-blue); }
+
+.lang-selector {
+    background-color: var(--color-white);
+    color: var(--color-navy);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: var(--color-light-blue);
+    padding: 6rem 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--color-mid-blue);
+}
+.hero h1 { color: var(--color-navy); font-size: 3rem; margin-bottom: 1.5rem; }
+.hero p { font-size: 1.25rem; max-width: 800px; margin: 0 auto 2.5rem auto; color: var(--color-dark); }
+.btn {
+    display: inline-block; background-color: var(--color-orange); color: var(--color-white);
+    padding: 1rem 2rem; text-decoration: none; font-weight: bold; border-radius: 6px; transition: 0.3s;
+}
+.btn:hover { background-color: #e68900; transform: scale(1.05); }
+
+section { padding: 5rem 20px; }
+section h2 { color: var(--color-navy); font-size: 2.5rem; text-align: center; margin-bottom: 3rem; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+.card {
+    background-color: var(--color-white); border: 1px solid var(--color-light-blue);
+    border-top: 5px solid var(--color-orange); padding: 2rem; border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,42,84,0.15); }
+
+/* Ícones SVG */
+.card-icon { margin-bottom: 1.5rem; }
+.card-icon svg { color: var(--color-orange); }
+
+.card h3 { color: var(--color-navy); font-size: 1.4rem; margin-bottom: 1rem; }
+
+/* Grid Responsabilidades Scrum */
+.scrum-roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.role-card {
+    background: #fff;
+    border: 1px solid var(--color-light-blue);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    position: relative;
+    padding-bottom: 3.5rem; /* espaço para a tag */
+}
+.role-card h4 {
+    color: var(--color-navy);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #fff;
+}
+.badge-po { background: #E91E63; }
+.badge-sm { background: #2196F3; }
+.badge-dev { background: #4CAF50; }
+.badge-scrum { background: var(--color-navy); }
+.badge-kanban { background: #9C27B0; }
+.badge-xp { background: #FF5722; }
+
+.role-card .badge {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+}
+
+/* Guia Metodologias */
+.guide-item {
+    background-color: #F8F9FA; border-left: 5px solid var(--color-mid-blue);
+    padding: 2rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;
+}
+.guide-item h3 { color: var(--color-navy); font-size: 1.8rem; margin-bottom: 1rem; border-bottom: 2px solid var(--color-light-blue); padding-bottom: 0.5rem;}
+.guide-item p { margin-bottom: 0.8rem; }
+
+/* Tabela Comparativa Modernizada */
+.modern-table {
+    background: var(--color-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+.modern-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.modern-table th, .modern-table td {
+    padding: 18px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.modern-table th {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.modern-table tr:hover td {
+    background-color: #F4F8FF;
+}
+
+/* Tags de categorias */
+.tag {
+    display: inline-block; background-color: var(--color-mid-blue); color: var(--color-white);
+    padding: 4px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem;
+}
+
+/* Blog e Filtros */
+.blog-filters {
+    display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem;
+}
+.filter-btn {
+    background-color: var(--color-white); border: 2px solid var(--color-navy);
+    color: var(--color-navy); padding: 0.5rem 1.5rem; border-radius: 20px;
+    font-weight: bold; cursor: pointer; transition: 0.3s;
+}
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--color-navy); color: var(--color-white);
+}
+
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+.blog-card {
+    background-color: var(--color-white); border: 1px solid #E0E0E0;
+    padding: 1.5rem; border-radius: 8px; display: flex; flex-direction: column;
+    transition: 0.3s;
+}
+.blog-card:hover { border-color: var(--color-mid-blue); box-shadow: 0 4px 12px rgba(138,168,255,0.2); }
+.blog-card h3 { font-size: 1.3rem; margin-bottom: 1rem; color: var(--color-navy); }
+.blog-card p { flex-grow: 1; color: #555; margin-bottom: 1rem; }
+.read-more {
+    display: inline-block;
+    margin-top: auto;
+    color: var(--color-orange);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+.read-more:hover { color: #cc7a00; }
+
+/* --- MODAL PARA OS ARTIGOS DO BLOG --- */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2000; 
+    left: 0; top: 0; width: 100%; height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6); 
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto; 
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 90%; 
+    max-width: 800px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    position: relative;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+}
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.close-btn:hover { color: #333; }
+.modal-body-content p {
+    margin-bottom: 1.2rem;
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.modal-body-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-navy);
+}
+
+footer { background-color: var(--color-dark); color: var(--color-white); text-align: center; padding: 2rem; }

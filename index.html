@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Metodologias Ágeis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo" data-i18n="nav-home">O Ecossistema Ágil</div>
+        <nav>
+            <a href="#ecossistema" data-i18n="nav-eco">Ecossistema</a>
+            <a href="#metodologias" data-i18n="nav-methods">O Guia</a>
+            <a href="#comparativo" data-i18n="nav-comp">Comparativo</a>
+            <a href="#blog" data-i18n="nav-blog">Blog</a>
+            <select id="lang-select" class="lang-selector">
+                <option value="pt-BR">PT-BR</option>
+                <option value="en">EN</option>
+                <option value="es">ES</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 data-i18n="hero-title">Cinco metodologias, um único ecossistema ágil</h1>
+                <p data-i18n="hero-subtitle">Descubra como Kanban, Lean, XP, Management 3.0 e Scrum se complementam em vez de competir.</p>
+                <a href="#metodologias" class="btn" data-i18n="hero-cta">Explorar o Guia</a>
+            </div>
+        </section>
+
+        <!-- O Ecossistema Ágil -->
+        <section id="ecossistema" class="ecosystem container">
+            <h2 data-i18n="eco-title">O Ecossistema Ágil</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                    </div>
+                    <h3 data-i18n="card-lean-title">A Bússola (Lean)</h3>
+                    <p data-i18n="card-lean-desc">Define para onde ir — garante que o produto certo está sendo construído minimizando desperdícios.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3 data-i18n="card-kanban-title">O Acelerador (Kanban)</h3>
+                    <p data-i18n="card-kanban-desc">Define o ritmo — organiza o fluxo visualmente e expõe os gargalos do trabalho.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    </div>
+                    <h3 data-i18n="card-xp-title">O Motor (XP)</h3>
+                    <p data-i18n="card-xp-desc">Define como construir com alta qualidade técnica através de engenharia rigorosa (TDD, Pair Programming).</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                    </div>
+                    <h3 data-i18n="card-m3-title">O Combustível (Gestão 3.0)</h3>
+                    <p data-i18n="card-m3-desc">Define o ambiente e a cultura humana necessária, empoderando times em sistemas complexos.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h3 data-i18n="card-scrum-title">O Veículo (Scrum)</h3>
+                    <p data-i18n="card-scrum-desc">Fornece o framework base, os ciclos de tempo (Sprints) e os papéis cruciais da equipe.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guia Metodologias -->
+        <section id="metodologias" class="guide container">
+            <h2 data-i18n="guide-title">Guia por Método</h2>
+            
+            <!-- Kanban, Lean, XP, M3 omitidos aqui para focar no Scrum modernizado (estão no CSS/JS idênticos ao anterior) -->
+            <div class="guide-item">
+                <h3>Kanban</h3>
+                <p><strong><span data-i18n="guide-what-label">O que é:</span></strong> <span data-i18n="guide-kb-what">Evolução dos processos...</span></p>
+                <p><strong><span data-i18n="guide-author-label">Autor / Ano:</span></strong> David J. Anderson, 2010</p>
+            </div>
+            
+            <div class="guide-item">
+                <h3>Extreme Programming (XP)</h3>
+                <p><strong><span data-i18n="guide-what-label">O que é:</span></strong> <span data-i18n="guide-xp-what">Metodologia de engenharia...</span></p>
+                <p><strong><span data-i18n="guide-author-label">Autor / Ano:</span></strong> Kent Beck, 1999</p>
+            </div>
+
+            <div class="guide-item">
+                <h3>Scrum</h3>
+                <p><strong><span data-i18n="guide-what-label">O que é:</span></strong> <span data-i18n="guide-scrum-what">Framework que organiza pessoas e escopo (o quê), com ciclos de tempo (Sprints) e responsabilidades bem definidas.</span></p>
+                
+                <h4 style="margin-top: 1.5rem; color: var(--color-navy);" data-i18n="scrum-accountabilities-title">Responsabilidades do Scrum Team (Guia 2020)</h4>
+                
+                <div class="scrum-roles-grid">
+                    <div class="role-card">
+                        <h4 data-i18n="po-title">Product Owner</h4>
+                        <p data-i18n="po-desc">Responsável por maximizar o valor do produto resultante do trabalho da equipe. Foca na visão de negócios, gerenciamento claro do Product Backlog e comunicação com stakeholders.</p>
+                        <span class="badge badge-po" data-i18n="po-focus">Foco: O Quê e Por Quê</span>
+                    </div>
+                    
+                    <div class="role-card">
+                        <h4 data-i18n="sm-title">Scrum Master</h4>
+                        <p data-i18n="sm-desc">Verdadeiro líder que serve à equipe. Responsável por estabelecer o Scrum, remover impedimentos, facilitar eventos e garantir um ambiente de melhoria contínua.</p>
+                        <span class="badge badge-sm" data-i18n="sm-focus">Foco: Processo e Eficiência</span>
+                    </div>
+                    
+                    <div class="role-card">
+                        <h4 data-i18n="dev-title">Developers</h4>
+                        <p data-i18n="dev-desc">Profissionais autogerenciáveis responsáveis por criar um Incremento de produto utilizável e de valor a cada Sprint. Eles decidem a melhor forma técnica de construir o produto.</p>
+                        <span class="badge badge-dev" data-i18n="dev-focus">Foco: Como Construir</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparativo Modernizado -->
+        <section id="comparativo" class="dashboard container">
+            <h2 data-i18n="comp-title">Comparativo Ágil</h2>
+            <div class="table-responsive modern-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-i18n="dash-attr">Atributo</th>
+                            <th>Scrum</th>
+                            <th>Kanban</th>
+                            <th>Extreme Programming (XP)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-i18n="dash-focus">Foco principal</td>
+                            <td><span class="badge badge-scrum" data-i18n="dash-scrum-focus">Gestão do produto/equipe</span></td>
+                            <td><span class="badge badge-kanban" data-i18n="dash-kb-focus">Otimização do fluxo</span></td>
+                            <td><span class="badge badge-xp" data-i18n="dash-xp-focus">Excelência técnica</span></td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="dash-cad">Cadência (tempo)</td>
+                            <td data-i18n="dash-scrum-cad">Sprints fixas (1 a 4 sem)</td>
+                            <td data-i18n="dash-kb-cad">Fluxo contínuo</td>
+                            <td data-i18n="dash-xp-cad">Iterações muito curtas</td>
+                        </tr>
+                        <tr>
+                            <td data-i18n="dash-change">Mudanças</td>
+                            <td data-i18n="dash-scrum-change">Apenas no intervalo das sprints</td>
+                            <td data-i18n="dash-kb-change">A qualquer momento</td>
+                            <td data-i18n="dash-xp-change">Acolhidas constantemente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Combinando Metodologias -->
+        <section id="combinando" class="marriage container">
+            <h2 data-i18n="comb-title">Combinando Metodologias</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3 data-i18n="mar-1-title">Valide antes de programar</h3>
+                    <span class="tag">Lean + Kanban</span>
+                    <p data-i18n="mar-1-desc" style="margin-top:1rem;">Só colocar no quadro itens que já tiveram o valor minimamente validado.</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="mar-2-title">Qualidade destrava fluxo</h3>
+                    <span class="tag">XP + Kanban</span>
+                    <p data-i18n="mar-2-desc" style="margin-top:1rem;">Código ruim gera retrabalho, que trava o Kanban. O XP garante fluidez.</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="mar-3-title">Gestão orgânica dos problemas</h3>
+                    <span class="tag">Gestão 3.0 + Scrum</span>
+                    <p data-i18n="mar-3-desc" style="margin-top:1rem;">Empodere o time para achar a solução na retrospectiva em vez de ditar regras.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog / Artigos com Modais Funcionais -->
+        <section id="blog" class="blog container">
+            <h2 data-i18n="nav-blog">Blog</h2>
+            
+            <div class="blog-filters">
+                <button class="filter-btn active" onclick="filterBlog('all', this)" data-i18n="filter-all">Todos</button>
+                <button class="filter-btn" onclick="filterBlog('scrum', this)">Scrum</button>
+                <button class="filter-btn" onclick="filterBlog('kanban', this)">Kanban</button>
+                <button class="filter-btn" onclick="filterBlog('lean', this)">Lean</button>
+                <button class="filter-btn" onclick="filterBlog('xp', this)">XP</button>
+                <button class="filter-btn" onclick="filterBlog('m3', this)">Management 3.0</button>
+            </div>
+
+            <div class="blog-grid" id="blogGrid">
+                
+                <div class="blog-card" data-tag="xp">
+                    <span class="tag">XP</span>
+                    <h3 data-i18n="blog-1-title">TDD na prática</h3>
+                    <p data-i18n="blog-1-desc">Descubra como inverter a lógica e escrever testes antes do código pode salvar o seu projeto.</p>
+                    <a href="javascript:void(0)" onclick="openModal('blog1')" class="read-more" data-i18n="read-more">Ler artigo &rarr;</a>
+                </div>
+
+                <div class="blog-card" data-tag="xp">
+                    <span class="tag">XP</span>
+                    <h3 data-i18n="blog-2-title">Pair Programming</h3>
+                    <p data-i18n="blog-2-desc">Duas pessoas e apenas um teclado. Veja como essa prática reduz falhas e compartilha conhecimento.</p>
+                    <a href="javascript:void(0)" onclick="openModal('blog2')" class="read-more" data-i18n="read-more">Ler artigo &rarr;</a>
+                </div>
+
+                <div class="blog-card" data-tag="lean">
+                    <span class="tag">Lean</span>
+                    <h3 data-i18n="blog-3-title">O que é um MVP real?</h3>
+                    <p data-i18n="blog-3-desc">O guia definitivo para cortar desperdícios e colocar o seu produto na mão do cliente.</p>
+                    <a href="javascript:void(0)" onclick="openModal('blog3')" class="read-more" data-i18n="read-more">Ler artigo &rarr;</a>
+                </div>
+
+                <div class="blog-card" data-tag="m3">
+                    <span class="tag">Management 3.0</span>
+                    <h3 data-i18n="blog-4-title">Delegation Poker</h3>
+                    <p data-i18n="blog-4-desc">Aprenda a usar ferramentas visuais para delegar decisões com responsabilidade.</p>
+                    <a href="javascript:void(0)" onclick="openModal('blog4')" class="read-more" data-i18n="read-more">Ler artigo &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- HTML DO MODAL PARA O BLOG -->
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Título do Artigo</h2>
+            <div id="modal-body" class="modal-body-content">
+                Carregando...
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Guia de Metodologias Ágeis - O Ecossistema Ágil.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

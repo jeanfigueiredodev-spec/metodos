@@ -88,7 +88,7 @@ section h2 { color: var(--color-navy); font-size: 2.5rem; text-align: center; ma
 /* Grid Responsabilidades Scrum */
 .scrum-roles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
@@ -139,7 +139,7 @@ section h2 { color: var(--color-navy); font-size: 2.5rem; text-align: center; ma
 .modern-table {
     background: var(--color-white);
     border-radius: 12px;
-    overflow: hidden;
+    overflow-x: auto;
     box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 .modern-table table {
@@ -255,3 +255,41 @@ section h2 { color: var(--color-navy); font-size: 2.5rem; text-align: center; ma
 }
 
 footer { background-color: var(--color-dark); color: var(--color-white); text-align: center; padding: 2rem; }
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    nav {
+        justify-content: center;
+        gap: 1rem;
+    }
+    .hero {
+        padding: 4rem 15px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .cards, .scrum-roles-grid, .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    .modal-content {
+        padding: 1.5rem;
+        width: 95%;
+        margin: 10% auto;
+    }
+    .guide-item {
+        padding: 1.5rem;
+        border-left-width: 3px;
+    }
+}
